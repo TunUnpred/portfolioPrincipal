@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+  display: flex;
+  height: 100vh;
+}
+.left-container{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.left-wrapper{
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.intro{
+  font-size: 30px;
+  font-weight: 300;
+}
+.name {
+  font-size: 60px;
+  font-weight: 300;
+}
+.title {
+  height: 50px;
+  overflow: hidden;
+}
+.title-wrapper{
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+@keyframes move {
+  50%{
+    transform: translateY(-50px)
+  }
+  150%{
+    transform: translateY(-150px)
+  }
+  
+}
+.title-items{
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: #59b256;
+}
+
+.right-container{
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.path-clip{
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  background-color: #59b256;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+}
+.khaled-img{
+  position: absolute;
+}
+.about{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.about-left{
+ flex: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ height: 100%;
+}
+.about-right {
+  flex: 1;
+}
+.left-side-img {
+  width: 50%;
+  height: 70vh;
+}
+.left-side-div {
+  width: 50%;
+  height: 70vh;
+  border-radius: 30px;
+  background-color: #333;
+  position: absolute;
+  left: 130px;
+  top: 50px;
+}
+.ig{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  height: 50px;
+}
+.desc {
+  width: 80%;
+  text-align: justify;
+}
+.product-list{
+  padding: 50px 100px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.product-title{
+  font-size: 3em;
+  margin-bottom: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product-l {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.product { 
+  margin: 20px 10px;
+  width: 30%;
+  height: 40vh;
+  border: 1px solid rgb(243,242,242);
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.browser {
+  background-color: rgb(243,242,242);
+  height: 20px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+}
+.circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 2px;
+}
+.Basta {
+  width: 100%;
+  object-fit: cover;
+  transition: all 10s ease;
+}
+.Basta:hover {
+  transform: translateY(-50%);
+}
+.contact-container{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding: 50px;
+}
+.green-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #59b256;
+  width: 30px;
+}
+.left-contact-container {
+  flex: 1;
+}
+.right-contact-container{
+  flex: 1;
+}
+.disc-title {
+  font-size: 5em;
+  width: 80%;
+  margin-bottom: 120px;
+}
+.infos{
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.icons {
+  margin-right: 20px;
+}
+span {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.info-contact {
+  margin-bottom: 50px;
+}
+.par-contact {
+  margin-bottom: 50px;
+}
+input {
+  border: hidden;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+textarea{
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.button-3 {
+  appearance: none;
+  background-color: #59b256;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #59b256;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+.toggle-container {
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  border: 1px solid #999;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 5px;
+}
+.toggle {
+  width: 15px;
+  height: 15px;
+}
+.gris-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #999;
+  position: absolute;
+  cursor: pointer;
+}
